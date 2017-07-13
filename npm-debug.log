@@ -1,0 +1,71 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node@5/5.12.0/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'twitter' ]
+2 info using npm@3.8.6
+3 info using node@v5.12.0
+4 verbose config Skipping project config: /Users/22arsh/.npmrc. (matches userconfig)
+5 silly loadCurrentTree Starting
+6 silly install loadCurrentTree
+7 silly install readLocalPackageData
+8 silly fetchPackageMetaData twitter
+9 silly fetchNamedPackageData twitter
+10 silly mapToRegistry name twitter
+11 silly mapToRegistry using default registry
+12 silly mapToRegistry registry http://artifactory.appdirect.com/artifactory/api/npm/npm-repo
+13 silly mapToRegistry data Result {
+13 silly mapToRegistry   raw: 'twitter',
+13 silly mapToRegistry   scope: null,
+13 silly mapToRegistry   name: 'twitter',
+13 silly mapToRegistry   rawSpec: '',
+13 silly mapToRegistry   spec: 'latest',
+13 silly mapToRegistry   type: 'tag' }
+14 silly mapToRegistry uri http://artifactory.appdirect.com/artifactory/api/npm/npm-repo/twitter
+15 verbose request uri http://artifactory.appdirect.com/artifactory/api/npm/npm-repo/twitter
+16 verbose request no auth needed
+17 info attempt registry request try #1 at 10:20:52 AM
+18 verbose request id 15a24aa178759cf1
+19 http request GET http://artifactory.appdirect.com/artifactory/api/npm/npm-repo/twitter
+20 info retry will retry, error on last attempt: Error: socket hang up
+21 info attempt registry request try #2 at 10:21:06 AM
+22 http request GET http://artifactory.appdirect.com/artifactory/api/npm/npm-repo/twitter
+23 info retry will retry, error on last attempt: Error: socket hang up
+24 info attempt registry request try #3 at 10:22:10 AM
+25 http request GET http://artifactory.appdirect.com/artifactory/api/npm/npm-repo/twitter
+26 silly fetchPackageMetaData Error: socket hang up
+26 silly fetchPackageMetaData     at createHangUpError (_http_client.js:250:15)
+26 silly fetchPackageMetaData     at Socket.socketOnEnd (_http_client.js:342:23)
+26 silly fetchPackageMetaData     at emitNone (events.js:85:20)
+26 silly fetchPackageMetaData     at Socket.emit (events.js:179:7)
+26 silly fetchPackageMetaData     at endReadableNT (_stream_readable.js:913:12)
+26 silly fetchPackageMetaData     at _combinedTickCallback (internal/process/next_tick.js:74:11)
+26 silly fetchPackageMetaData     at process._tickCallback (internal/process/next_tick.js:98:9)
+26 silly fetchPackageMetaData  error for twitter { [Error: socket hang up] code: 'ECONNRESET' }
+27 silly rollbackFailedOptional Starting
+28 silly rollbackFailedOptional Finishing
+29 silly runTopLevelLifecycles Starting
+30 silly runTopLevelLifecycles Finishing
+31 silly install printInstalled
+32 verbose stack Error: socket hang up
+32 verbose stack     at createHangUpError (_http_client.js:250:15)
+32 verbose stack     at Socket.socketOnEnd (_http_client.js:342:23)
+32 verbose stack     at emitNone (events.js:85:20)
+32 verbose stack     at Socket.emit (events.js:179:7)
+32 verbose stack     at endReadableNT (_stream_readable.js:913:12)
+32 verbose stack     at _combinedTickCallback (internal/process/next_tick.js:74:11)
+32 verbose stack     at process._tickCallback (internal/process/next_tick.js:98:9)
+33 verbose cwd /Users/22arsh/Desktop/UITC
+34 error Darwin 16.0.0
+35 error argv "/usr/local/Cellar/node@5/5.12.0/bin/node" "/usr/local/bin/npm" "install" "twitter"
+36 error node v5.12.0
+37 error npm  v3.8.6
+38 error code ECONNRESET
+39 error network socket hang up
+40 error network This is most likely not a problem with npm itself
+40 error network and is related to network connectivity.
+40 error network In most cases you are behind a proxy or have bad network settings.
+40 error network
+40 error network If you are behind a proxy, please make sure that the
+40 error network 'proxy' config is set properly.  See: 'npm help config'
+41 verbose exit [ 1, true ]

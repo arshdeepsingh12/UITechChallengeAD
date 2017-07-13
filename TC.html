@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https:/resources/demos/style.css">
+  <script type="text/javascript" src="ad.json"></script>
+<link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body>
+<ul class="headdiv">
+<li class="dont-show" id="datefield">
+<pre>
+Date  <input id="date" class="headdiv__dinp__date" type="text">
+No of Tweets  <input id="notweets" type="number" value="30">
+</pre>
+</li>
+<li class="headdiv__ebtn">
+<input  class="dbtn" id="editbtn" type="button" value="Edit">
+</li>
+</ul>
+<ul class="headmiddle">
+	<input  class="headmiddle__fetchbtn" id="fetchbtn" type="button" value="Fetch Tweets">
+</ul>
+<ul class="tweethnd">
+<li id="tweetslist" class="tweethnd__list">
+	<ul id="tweets" class="tweethnd__list_tweets"></ul>
+</li>
+<li id="tweetslist2" class="tweethnd__list">
+	<ul class="tweethnd__list_tweets">
+	</ul>
+</li>
+<li id="tweetslist3" class="tweethnd__list">
+	<ul class="tweethnd__list_tweets"></ul>
+</li>
+</ul>
+
+<!--<script>-->
+    <!--var request = new XMLHttpRequest();-->
+<!--request.open('GET', 'ad.json')-->
+<!--request.onload = function() {-->
+
+	<!--var data = JSON.parse(request.responseText);-->
+	<!--console.log(data);-->
+<!--};-->
+<!--request.send();-->
+<!--</script>-->
+
+<script type="text/javascript" src="javas.js"></script>
+<script type="text/javascript" src="./DataFetcher/fetch.js"></script>
+<script type="text/javascript" src="./DataLoader/load.js"></script>
+</body>
+</html>
